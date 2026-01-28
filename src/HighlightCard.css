@@ -1,0 +1,37 @@
+.CardContainer{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 370px;
+    border-radius: 16px;
+    border: 1px solid #495E57;
+    background: #EEEEEE;
+    overflow: hidden;
+}
+.CardContainer img{
+    object-fit: cover;
+    width: 100%;
+    height: 130px;
+}
+.TitlePriceContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+#Price{
+    color: #FF8902;
+}
+#DescriptionP{
+    margin: 0.5rem;
+}
+.CardContainer button{
+    border: none;
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    margin-top: auto;
+}

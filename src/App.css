@@ -1,3 +1,6 @@
+html{
+    display: grid;
+}
 li{
     list-style-type: none;
 }

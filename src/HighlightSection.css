@@ -1,0 +1,9 @@
+.HighlightSectionContainer{
+    display: grid;
+    place-items: center;
+}
+.MultiCardContainer{
+    display: flex;
+    gap: 8rem;
+    margin: 2rem;
+}

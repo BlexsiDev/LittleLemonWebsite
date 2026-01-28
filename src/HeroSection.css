@@ -1,3 +1,33 @@
 .HeroSectionContainer{
+    display: flex;
+    justify-content: center;
     background: #495E57;
+}
+.DescriptionContainer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.DescriptionContainer h1{
+    font-size: 85px;
+    color: #F4CE14;
+    
+}
+.DescriptionContainer p{
+    font-size: 29px;
+    font-family: sans-serif;
+    color: white;
+}
+.DescriptionContainer button{
+    background: #F4CE14;
+    border: none;
+    border-radius: 16px;
+    width: 50%;
+    height: 4rem;
+    font-size: 21px;
+    font-weight: bold;
+}
+.DescriptionContainer button:hover{
+    transition: 300ms;
+    background: #a38a0e;
 }
