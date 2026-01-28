@@ -1,0 +1,24 @@
+.NavBarContainer{
+    display: flex;
+    margin: 1.5em;
+    justify-content: center;
+    place-items: center;
+}
+.NavBarContainer img{
+    margin: 0 2em;
+}
+.NavBarContainer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.6em;
+}
+.NavBarContainer a{
+    font-family: sans-serif;
+    font-weight: 600;
+    color: black;
+}
+.NavBarContainer a:hover{
+    transition: 150ms;
+    color: #EE9972;
+}
