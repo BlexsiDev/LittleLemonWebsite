@@ -1,28 +1,32 @@
 .HeroSectionContainer{
     display: flex;
-    gap: 8rem;
+    gap: 7rem;
     justify-content: center;
     background: #495E57;
 }
 .HeroSectionContainer img{
-    margin-top: 4rem;
+    object-fit: cover;
     border-radius: 16px;
+    position: relative;
+    top: 4rem;
 }
 .DescriptionContainer{
-    padding-top: 2rem ;
     display: flex;
-    font-family: "PT Serif", serif;
     flex-direction: column;
-    width: 30%;
+    font-family: "PT Serif", serif;
+    padding-top: 4rem ;
+    width: 28%;
 }
 .LogoAndSublogo h1{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #F4CE14;
     margin: 0;
 }
 .DescriptionContainer p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: white;
+    width: 85%;
 }
 .DescriptionContainer > p{
     margin: 2rem 0;

@@ -1,7 +1,7 @@
 .HighlightSectionContainer{
     display: grid;
     place-items: center;
-    margin: 6rem;
+    margin: 8rem;
 }
 .TextAndButtonContainer{
     display: flex;

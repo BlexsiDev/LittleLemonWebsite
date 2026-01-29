@@ -1,9 +1,14 @@
+//Components
 import HeroSection from "./HeroSection";
 import HighlightSection from "./HighlightSection";
 import TestimonialsSection from "./TestimonialsSection";
 import AboutSection from "./AboutSection";
 import HighlightCard from "./HighlightCard";
 import TestimonialCard from "./TestimonialCard";
+//images
+import GreekSalad from "./assets/GreekSalad.png"
+import Bruschetta from "./assets/Bruschetta.png"
+import LemonDessert from "./assets/lemon dessert.jpg"
 
 function MainSection() {
     return(
@@ -11,21 +16,21 @@ function MainSection() {
         <HeroSection/>
         <HighlightSection>
           <HighlightCard
-          imgSrc={"https://picsum.photos/300/200"}
+          imgSrc={GreekSalad}
           imgAlt={"Some image"}
           title={"Greek Salad"}
           price={"$12.99"}
           description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
           />
           <HighlightCard
-          imgSrc={"https://picsum.photos/300/200"}
+          imgSrc={Bruschetta}
           imgAlt={"Some image"}
           title={"Bruschetta"}
           price={"$5.99"}
           description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
           />
           <HighlightCard
-          imgSrc={"https://picsum.photos/300/200"}
+          imgSrc={LemonDessert}
           imgAlt={"Some image"}
           title={"Lemon dessert"}
           price={"$5.00"}
