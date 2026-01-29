@@ -1,0 +1,36 @@
+.AboutSectionContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0;
+    flex-wrap: wrap;
+}
+.AboutSectionContainer img{
+    object-fit: cover;
+}
+.AboutTextContainer{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 6rem;
+}
+.AboutTextContainer h1{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "PT Serif";
+    color: #495E57;
+}
+.AboutTextContainer p{
+    width: 80%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+}
+#TopImage{
+    position: absolute;
+}
+#TopImage{
+    position: relative;
+    right: 8rem;
+    bottom: 3rem;
+}
