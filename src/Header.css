@@ -3,6 +3,7 @@
     margin: 1.5rem;
     justify-content: center;
     place-items: center;
+    gap: 2rem;
 }
 .NavBarContainer img{
     margin: 0 2rem;

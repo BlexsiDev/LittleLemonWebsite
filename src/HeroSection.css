@@ -1,11 +1,12 @@
 .HeroSectionContainer{
     display: flex;
-    gap: 5rem;
+    gap: 8rem;
     justify-content: center;
     background: #495E57;
 }
 .HeroSectionContainer img{
     margin-top: 4rem;
+    border-radius: 16px;
 }
 .DescriptionContainer{
     padding-top: 2rem ;
@@ -14,23 +15,26 @@
     flex-direction: column;
     width: 30%;
 }
-.DescriptionContainer h1{
-    font-size: 5.3rem;
+.LogoAndSublogo h1{
+    font-size: 4rem;
     color: #F4CE14;
-    
+    margin: 0;
 }
 .DescriptionContainer p{
-    font-size: 1.5rem;
-    font-family: "Karla", sans-serif;
+    font-size: 1.3rem;
     color: white;
+}
+.DescriptionContainer > p{
+    margin: 2rem 0;
 }
 .DescriptionContainer button{
     background: #F4CE14;
     border: none;
     border-radius: 16px;
-    width: 50%;
-    height: 4rem;
-    font-size: 1.3rem;
+    width: 15rem;
+    height: 3.5rem;
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: auto;
     margin-bottom: 2rem;

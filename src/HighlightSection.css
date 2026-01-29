@@ -1,9 +1,35 @@
 .HighlightSectionContainer{
     display: grid;
     place-items: center;
+    margin: 6rem;
+}
+.TextAndButtonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 18rem;
+}
+.TextAndButtonContainer h1{
+    font-family: "PT Serif", sans-serif;
+    font-size: 3rem;
+}
+.TextAndButtonContainer button{
+    background: #F4CE14;
+    border: none;
+    border-radius: 16px;
+    width: 15rem;
+    height: 3.5rem;
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+.TextAndButtonContainer button:hover{
+    transition: 300ms;
+    background: #a38a0e;
 }
 .MultiCardContainer{
     display: flex;
     gap: 8rem;
-    margin: 2rem;
 }
