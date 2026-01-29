@@ -1,3 +1,16 @@
 .TestimonialsSectionContainer{
     background: #495E57;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    padding: 14rem;
+}
+.TestimonialsSectionContainer h1{
+    font-family: "PT Serif";
+    font-size: 3rem;
+    color: #F4CE14;
+}
+.TestimonialCardContainer{
+    display: flex;
+    gap: 2rem;
 }

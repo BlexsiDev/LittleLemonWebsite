@@ -1,5 +1,23 @@
 .TestimonialCard{
-    background: red;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background: #EEEEEE;
     width: 200px;
     height: 170px;
+    padding: 1.2rem;
+    border-radius: 6px;
+}
+.User{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+.User p{
+    text-align: center;
+    width: 6rem;
+}
+.User img{
+    border-radius: 5px;
 }

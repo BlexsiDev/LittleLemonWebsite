@@ -33,7 +33,10 @@ function MainSection() {
           />
         </HighlightSection>
         <TestimonialsSection>
-          <TestimonialCard/>
+          <TestimonialCard rating={"4.5"} name={"Geronimo"} review={"Really liked food"}/>
+          <TestimonialCard rating={"4.5"} name={"Jack"} review={"Really liked food"}/>
+          <TestimonialCard rating={"4.5"} name={"Louis"} review={"Really liked food"}/>
+          <TestimonialCard rating={"4.5"} name={"Diane"} review={"Really liked food"}/>
         </TestimonialsSection>
         <AboutSection/>
       </main>
