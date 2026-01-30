@@ -1,0 +1,84 @@
+.FormSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/restaurant\ chef\ B.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.FormContainer{
+    margin: 3rem;
+    overflow: hidden;
+    background: #EDEFEE;
+    border-radius: 16px;
+    width: 31rem;
+    box-shadow: 0px 0px 10px 1px;
+}
+.FormContainer header{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    background: #495E57 ;
+    box-shadow: 0px 1px 10px 1px;
+    padding: 0.7rem;
+}
+.FormContainer header button{
+    background: #F4CE14;
+    border-radius: 16px;
+    padding: 0.3rem;
+    border: none;
+    place-self: start;
+}
+.FormContainer h1{
+    font-family: "PT Serif", serif;
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+.FormContainer form{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.FormContainer label{
+    font-family: "Karla", sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+.FormContainer input{
+    width: 100%;
+    height: 3rem;
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
+    background: #FFE7DB;
+    border: 2px solid #EE9972;
+    border-radius: 16px;
+    padding: 1rem;
+}
+.FormContainer textarea{
+    width: 100%;
+    height: 6rem;
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
+    background: #FFE7DB;
+    border: 2px solid #EE9972;
+    border-radius: 16px;
+    padding: 1rem;
+}
+#reserve{
+    background: #F4CE14;
+    border: none;
+    border-radius: 16px;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+    height: 4rem;
+    margin: auto;
+}
+#reserve:hover{
+    background: #f5d94b;
+}
