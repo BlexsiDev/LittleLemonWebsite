@@ -5,6 +5,9 @@
     place-items: start;
     background: #495E57;
 }
+.Footer img{
+    filter: drop-shadow(4px 4px 0px #213a25);
+}
 .Footer p{
     font-family: sans-serif;
     font-weight: 600;

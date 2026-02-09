@@ -45,5 +45,6 @@
 }
 .DescriptionContainer button:hover{
     transition: 300ms;
-    background: #a38a0e;
+    background: #f3dc6b;
+    cursor: pointer;
 }

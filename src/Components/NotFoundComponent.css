@@ -1,0 +1,23 @@
+.ErrorMesage404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+    padding: 6rem;
+    gap: 4rem;
+    font-family: "Karla", sans-serif;
+}
+.ErrorMesage404 h1{
+    font-size: 6rem;
+    text-align: center;
+}
+.ErrorMesage404 a{
+    font-size: 4rem;
+    color: black;
+    background: #F4CE14;
+    border-radius: 16px;
+    padding: 1rem 8rem;
+}

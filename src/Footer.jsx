@@ -1,5 +1,6 @@
 import "./Footer.css"
 import footerLogo from "./assets/FooterLogo.png"
+import { Link } from "react-router-dom";
 
 function Footer() {
     return(
@@ -9,31 +10,31 @@ function Footer() {
                 <nav>
                     <p>Doormat Navigation</p>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Reservations</a></li>
-                        <li><a href="#">Order Online</a></li>
-                        <li><a href="#">Log In</a></li>
+                        <li><Link to={'/'}>Home</Link></li>
+                        <li><Link to={'/'}>About</Link></li>
+                        <li><Link to={'/'}>Menu</Link></li>
+                        <li><Link to={'/booking'}>Reservations</Link></li>
+                        <li><Link to={'/'}>Order Online</Link></li>
+                        <li><Link to={'/'}>Log In</Link></li>
                     </ul>
                 </nav>
                 <nav>
                     <p>Contact</p>
                     <ul>
-                        <li><a href="#">Address</a></li>
-                        <li><a href="#">Phone Number</a></li>
-                        <li><a href="#">Email</a></li>
+                        <li><Link to={'/'}>Address</Link></li>
+                        <li><Link to={'/'}>Phone Number</Link></li>
+                        <li><Link to={'/'}>Email</Link></li>
                     </ul>
                 </nav>
                 <nav>
                     <p>Social Media Links</p>
                     <ul>
-                        <li><a href="#">Twitters</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Threads</a></li>
-                        <li><a href="#">Youtube</a></li>
-                        <li><a href="#">TikTok</a></li>
+                        <li><Link to={'/'}>Twitters</Link></li>
+                        <li><Link to={'/'}>Instagram</Link></li>
+                        <li><Link to={'/'}>Facebook</Link></li>
+                        <li><Link to={'/'}>Threads</Link></li>
+                        <li><Link to={'/'}>Youtube</Link></li>
+                        <li><Link to={'/'}>TikTok</Link></li>
                     </ul>
                 </nav>
             </div>

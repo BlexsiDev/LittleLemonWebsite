@@ -1,7 +1,7 @@
 import "./FormComponent.css"
 import { useState } from "react";
 import GBArrow from "../assets/Arrow.png"
-import BGimage from "../assets/restaurant chef B.jpg"
+import { Link } from "react-router-dom";
 
 function FormComponent(){
     const [date, setDate] = useState('');
@@ -16,7 +16,9 @@ function FormComponent(){
         <section className="FormSection">
             <div className="FormContainer">
                 <header>
-                    <button><img src={GBArrow} alt="Go back arrow Icon" width={30}/></button>
+                    <Link to={'/'}>
+                        <button><img src={GBArrow} alt="Go back arrow Icon" width={30}/></button>
+                    </Link>
                     <h1>Reserve a table</h1>
                 </header>
 
