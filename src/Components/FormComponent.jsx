@@ -5,7 +5,17 @@ import { Link } from "react-router-dom";
 
 function FormComponent(){
     const [date, setDate] = useState('');
-    
+    const [time, setTime] = useState('');
+    const [numOfDinners, setNumOfDinners] = useState('');
+    const [occasion, setOccasion] = useState('');
+
+    console.log(date, time, numOfDinners, occasion);
+
+    const AddDays = () =>{
+        const date = new Date();
+        date.setDate(date.getDate() + 365)
+        return date.toISOString().split('T')[0];
+    }
 
     function HandleSubmit(e) {
         e.preventDefault();
@@ -24,32 +34,6 @@ function FormComponent(){
 
                 <form onSubmit={HandleSubmit}>
                     <div>
-                        <label htmlFor="FullName">Full name</label>
-                        <br/>
-                        <input
-                        type="text"
-                        id="FullName"
-                        name="FullName"
-                        placeholder="Enter your full name"
-                        min={3}
-                        max={30}
-                        required/>
-                    </div>
-                    
-                    <div>
-                        <label htmlFor="NumOfDin">Number of dinners</label>
-                        <br/>
-                        <input
-                        type="number"
-                        id="NumOfDin"
-                        name="NumOfDin"
-                        placeholder="Select a number"
-                        min={1}
-                        max={15}
-                        required/>
-                    </div>
-
-                    <div>
                     <label htmlFor="Date">Date</label>
                     <br/>
                     <input
@@ -59,56 +43,53 @@ function FormComponent(){
                         value={date}
                         onChange={ (e) => setDate(e.target.value)}
                         min={new Date().toISOString().split('T')[0]}
+                        max={AddDays()}
                         required/>
                     </div>
 
                     <div>
-                        <label htmlFor="Hour">Hour</label>
+                        <label htmlFor="Time">Time</label>
+                        <br/>
+                        <select
+                        value={time}
+                        onChange={ (e) => setTime(e.target.value)}
+                        required>
+                            <option>17:00</option>
+                            <option>18:00</option>
+                            <option>19:00</option>
+                            <option>20:00</option>
+                            <option>21:00</option>
+                            <option>22:00</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label htmlFor="NumOfDin">Number of dinners</label>
                         <br/>
                         <input
-                        type="time"
-                        id="Hour"
-                        name="Hour"
-                        min="09:00"
-                        max="17:00"
+                        type="number"
+                        id="NumOfDin"
+                        name="NumOfDin"
+                        placeholder="Select a number"
+                        min={1}
+                        max={10}
+                        value={numOfDinners}
+                        onChange={(e) => setNumOfDinners(e.target.value)}
                         required/>
                     </div>
 
                     <div>
-                        <label htmlFor="Email">Email</label>
-                        <br/>
-                        <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required/>
+                        <label for="occasion">Occasion</label>
+                        <select
+                        value={occasion}
+                        onChange={(e) => setOccasion(e.target.value)}
+                        id="occasion">
+                            <option>Birthday</option>
+                            <option>Anniversary</option>
+                        </select>
                     </div>
 
-                    <div>
-                        <label htmlFor="Phone">Phone Number</label>
-                        <br/>
-                        <input
-                        type="tel"
-                        id="Phone"
-                        name="Phone"
-                        placeholder="123-45-678"
-                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                        required/>
-                    </div>
-
-                    <div>
-                        <label htmlFor="Notes">Notes</label>
-                        <br/>
-                        <textarea
-                        type="text"
-                        id="Notes"
-                        name="Notes"
-                        placeholder="e.g. alergies"
-                        max={300}/>
-                    </div>
-
-                    <button id="reserve">Reserve</button>
+                    <button disabled={!date && !time} id="reserve">Make your reservation</button>
                 </form>
             </div>
             
