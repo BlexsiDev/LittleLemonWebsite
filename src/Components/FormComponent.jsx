@@ -3,10 +3,7 @@ import { useState } from "react";
 import GBArrow from "../assets/Arrow.png"
 import { Link } from "react-router-dom";
 
-//services
-import { submitAPI } from '../services/mockAPI';
-
-function FormComponent({availableTimes, setAvailableTimes}){
+function FormComponent({availableTimes, setAvailableTimes, onSubmit}){
     //State of each of the form inputs
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
@@ -34,8 +31,7 @@ function FormComponent({availableTimes, setAvailableTimes}){
     //Form submition
     function HandleSubmit(e) {
         e.preventDefault();
-        const result = submitAPI("Chocolate con leche");
-        console.log(result);
+        onSubmit("Chocolate con leche");
     }
 
     return(
@@ -100,8 +96,7 @@ function FormComponent({availableTimes, setAvailableTimes}){
                             <option>Other</option>
                         </select>
                     </div>
-
-                    <button disabled={!date && !numOfDinners} id="reserve">Make your reservation</button>
+                    <button disabled={!date && !numOfDinners} id="reserve">Make your reservation</button>                
                 </form>
             </div>
             
