@@ -2,17 +2,21 @@ import React from 'react'
 import Header from '../Header'
 import FormComponent from '../Components/FormComponent'
 import Footer from '../Footer'
+import { useReducer, useEffect } from "react";
 
-import { useReducer } from "react";
+//services
+import { fetchAPI } from '../services/mockAPI';
 
 const BookingPage = () => {
 
   const updateTimes = (state, action) =>{
+    const selectedDate = new Date(action.payload);
+    state = fetchAPI(selectedDate);
     return state;
   }
 
   const initializeTimes = () => {
-    return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+    return fetchAPI(new Date());
   }
 
   const [state, dispatch] = useReducer(updateTimes, null, initializeTimes);
