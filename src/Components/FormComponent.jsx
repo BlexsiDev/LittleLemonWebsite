@@ -16,7 +16,7 @@ function FormComponent({availableTimes, setAvailableTimes}){
     })
 
     //Grabs current date and adds an extra year, so it has a max date to book a table
-    const AddDays = () =>{
+    const AddAYear = () =>{
         const date = new Date();
         date.setDate(date.getDate() + 365)
         return date.toISOString().split('T')[0];
@@ -31,7 +31,6 @@ function FormComponent({availableTimes, setAvailableTimes}){
     //Form submition
     function HandleSubmit(e) {
         e.preventDefault();
-        console.log("Submitted!")
     }
 
     return(
@@ -55,7 +54,7 @@ function FormComponent({availableTimes, setAvailableTimes}){
                         value={date}
                         onChange={handleDateChange}
                         min={new Date().toISOString().split('T')[0]}
-                        max={AddDays()}
+                        max={AddAYear()}
                         required/>
                     </div>
 
