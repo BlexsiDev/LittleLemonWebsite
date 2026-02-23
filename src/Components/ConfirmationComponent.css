@@ -1,0 +1,50 @@
+.ConfirmationSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/restaurant\ chef\ B.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.ConfirmationCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    border: 1px rgb(143, 143, 143) solid;
+    padding: 1rem;
+    margin: 9rem 0;
+    gap: 0.2rem;
+}
+.ConfirmationCard h1{
+    font-family: "PT Serif", serif;
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+.ConfirmationCard p{
+    font-family: "Karla", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    color: white;
+}
+.ConfirmationCard button{
+    padding: 1rem;
+    margin: 1rem;
+    background: #F4CE14;
+    border: none;
+    border-radius: 16px;
+}
+.ConfirmationCard button:hover{
+    cursor: pointer;
+    background: #ffe76d;
+}
+#homeIcon{
+    width: 50px;
+}
