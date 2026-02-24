@@ -20,7 +20,7 @@ const BookingPage = () => {
     if (serverResponse) {
       Nav('/booking/confirmation');
     } else {
-      alert("An error ocurred");
+      alert("An error ocurred when sending the form, please wait and try again later");
     }
   }
 

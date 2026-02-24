@@ -87,6 +87,10 @@
     border-radius: 16px;
     padding: 1rem;
 }
+.FormContainer span{
+    color: red;
+    font-family: "karla", sans-serif;
+}
 #reserve{
     background: #F4CE14;
     border: none;
