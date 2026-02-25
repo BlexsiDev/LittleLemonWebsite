@@ -40,14 +40,15 @@ function FormComponent({availableTimes, setAvailableTimes, onSubmit}){
     function IsDateValid(){
         if (!date) return false;
         
-        const selectedDate = new Date(date);
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
-        const maxDate = new Date();
-        maxDate.setDate(maxDate.getDate() + 365)
+        const selectedDate = new Date(date); //la fecha que selecciona el usuario
+        const today = new Date(); //la fecha de hoy
+        today.setHours(0, 0, 0, 0); //pone el tiempo en 00:00:00:00 para que no haya problemas al compararla con la "selectedDate"
 
-        if (selectedDate < today || selectedDate > maxDate) return false;
-        else return true;
+        const maxDate = new Date(); //la fecha de hoy
+        maxDate.setDate(maxDate.getDate() + 365) //le añade 365 días a la fecha de hoy, efectivamente creando un rango
+
+        if (selectedDate < today || selectedDate > maxDate) return false; //Compara la fecha selecionada para que esté dentro del rango
+        else return true; //devuelve true si está dentro del rango
     }
 
     function DateErrorMessage() {
@@ -66,7 +67,7 @@ function FormComponent({availableTimes, setAvailableTimes, onSubmit}){
     //Form submition
     function HandleSubmit(e) {
         e.preventDefault();
-        onSubmit("Chocolate con leche");
+        onSubmit({date, time, occasion, numOfDinners});
     }
 
     //These are variables containing different expressions so I don't have to re type them everytime
@@ -154,3 +155,32 @@ function FormComponent({availableTimes, setAvailableTimes, onSubmit}){
 }
 
 export default FormComponent;
+
+//duped functions for testing
+
+export function IsDateValid(date){
+    if (!date) return false;
+
+    const selectedDate = new Date(date);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const maxDate = new Date();
+    maxDate.setDate(maxDate.getDate() + 365)
+
+    if (selectedDate < today || selectedDate > maxDate) return false;
+    else return true;
+}
+
+export function DateErrorMessage(date) {
+    if (!date) return "Please select a date";
+
+    const selectedDate = new Date(date);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const maxDate = new Date();
+    maxDate.setDate(maxDate.getDate() + 365);
+
+    if (selectedDate < today) return "Can't book a table in the past";
+    else if (selectedDate > maxDate) return "Can't book a table more than a year in advance";
+}
