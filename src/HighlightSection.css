@@ -1,6 +1,8 @@
 .HighlightSectionContainer{
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 8rem;
 }
 .TextAndButtonContainer{
@@ -31,5 +33,32 @@
 }
 .MultiCardContainer{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 8rem;
+}
+@media (width < 1024px){ 
+    .MultiCardContainer{
+        gap: 2rem;
+    }
+    .TextAndButtonContainer{
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+@media (width < 814px){ 
+    .HighlightSectionContainer{
+        margin: 1rem;
+    }
+    .MultiCardContainer{
+        flex-direction: column;
+    }
+    .TextAndButtonContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .TextAndButtonContainer h1{
+        text-align: center;
+    }
 }

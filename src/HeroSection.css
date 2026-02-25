@@ -1,20 +1,19 @@
 .HeroSectionContainer{
     display: flex;
     gap: 7rem;
+    align-items: center;
     justify-content: center;
     background: #495E57;
 }
 .HeroSectionContainer img{
     object-fit: cover;
     border-radius: 16px;
-    position: relative;
-    top: 4rem;
 }
 .DescriptionContainer{
     display: flex;
     flex-direction: column;
     font-family: "PT Serif", serif;
-    padding-top: 4rem ;
+    padding-top: 4rem;
     width: 28%;
 }
 .LogoAndSublogo h1{
@@ -47,4 +46,30 @@
     transition: 300ms;
     background: #f3dc6b;
     cursor: pointer;
+}
+
+@media (width > 820px){
+    .HeroSectionContainer img{
+        position: relative;
+        top: 4rem;
+    }
+}
+@media (max-width: 819px) {
+    .HeroSectionContainer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .HeroSectionContainer img{
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+    .DescriptionContainer{
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        width: 80%;
+    }
+    .DescriptionContainer button{
+        margin-bottom: 0;
+    }
 }

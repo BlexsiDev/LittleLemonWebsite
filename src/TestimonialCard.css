@@ -20,4 +20,19 @@
 }
 .User img{
     border-radius: 5px;
+    width: 90px;
+}
+@media (width < 814px){ 
+    .TestimonialCard{
+        width: 70%;
+        height: 200px;
+    }
+    .User img{
+        border-radius: 5px;
+        width: 100px;
+    }
+    .TestimonialCard p{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 }

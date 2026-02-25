@@ -38,3 +38,12 @@
     margin: 0.5rem;
     margin-top: auto;
 }
+@media (width < 814px){ 
+    .CardContainer{
+        width: 90%;
+        height: 600px;
+    }
+    .CardContainer img{
+        height: 450px;
+    }
+}

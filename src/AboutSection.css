@@ -11,7 +11,7 @@
 .AboutTextContainer{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     margin: 0 6rem;
 }
 .AboutTextContainer h1{
@@ -21,7 +21,6 @@
     color: #495E57;
 }
 .AboutTextContainer p{
-    width: 80%;
     font-size: 1.1rem;
     font-weight: bold;
     color: black;
@@ -33,4 +32,18 @@
     position: relative;
     right: 8rem;
     bottom: 3rem;
+}
+
+@media (max-width: 1080px){ 
+    .AboutTextContainer{
+        margin: 0 2rem;
+        width: 80%;
+        
+    }
+    .ImgContainer{
+        display: none;
+    }
+    .AboutTextContainer p{
+        text-align: justify;
+    }
 }

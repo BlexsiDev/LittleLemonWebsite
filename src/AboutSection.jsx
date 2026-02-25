@@ -12,8 +12,8 @@ function AboutSection() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div className="ImgContainer">
-                <img id="BottomImage" src={RCB} alt="" width={280} height={350}/>
-                <img id="TopImage" src={MAA} alt="" width={280} height={350}/>
+                <img id="BottomImage" src={RCB} width={280} height={350}/>
+                <img id="TopImage" src={MAA} width={280} height={350}/>
             </div>
         </section>
     );
