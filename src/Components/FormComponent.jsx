@@ -40,15 +40,15 @@ function FormComponent({availableTimes, setAvailableTimes, onSubmit}){
     function IsDateValid(){
         if (!date) return false;
         
-        const selectedDate = new Date(date); //la fecha que selecciona el usuario
-        const today = new Date(); //la fecha de hoy
-        today.setHours(0, 0, 0, 0); //pone el tiempo en 00:00:00:00 para que no haya problemas al compararla con la "selectedDate"
+        const selectedDate = new Date(date);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
 
-        const maxDate = new Date(); //la fecha de hoy
-        maxDate.setDate(maxDate.getDate() + 365) //le añade 365 días a la fecha de hoy, efectivamente creando un rango
+        const maxDate = new Date();
+        maxDate.setDate(maxDate.getDate() + 365)
 
-        if (selectedDate < today || selectedDate > maxDate) return false; //Compara la fecha selecionada para que esté dentro del rango
-        else return true; //devuelve true si está dentro del rango
+        if (selectedDate < today || selectedDate > maxDate) return false;
+        else return true; 
     }
 
     function DateErrorMessage() {
