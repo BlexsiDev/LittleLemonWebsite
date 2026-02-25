@@ -10,7 +10,7 @@
     background-size: cover;
 }
 .FormContainer{
-    margin: 3rem;
+    margin: 3rem 0;
     overflow: hidden;
     background: #EDEFEE;
     border-radius: 16px;
@@ -104,4 +104,15 @@
 }
 #reserve:hover{
     background: #ffe76d;
+}
+@media (max-width: 518px){
+    .FormContainer{
+        width: 98%;
+    }
+    .FormContainer form{
+        padding: 1rem;
+    }
+    #reserve{
+        font-size: 1rem;
+    }
 }

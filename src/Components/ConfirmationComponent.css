@@ -48,3 +48,12 @@
 #homeIcon{
     width: 50px;
 }
+
+@media (max-width: 518px){
+    .ConfirmationCard{
+        width: 90%;
+    }
+    .ConfirmationCard img{
+        width: 70%;
+    }
+}

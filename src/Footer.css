@@ -1,8 +1,8 @@
 .Footer{
     display: flex;
     padding: 5rem;
-    justify-content: space-evenly;
-    place-items: start;
+    justify-content: center;
+    align-items: center;
     background: #495E57;
 }
 .Footer img{
@@ -27,4 +27,32 @@
     display: flex;
     justify-content: space-evenly;
     gap: 10rem;
+}
+@media (width < 1024px){ 
+    .Footer{
+        padding: 1rem;
+    }
+    .FooterNavBar{
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+}
+@media (width < 814px){ 
+    .Footer{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .FooterNavBar{
+        flex-direction: column;
+    }
+}
+@media (max-width: 418px){
+    .Footer{
+        padding: 1rem 0;
+    }
+    .FooterNavBar{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
 }

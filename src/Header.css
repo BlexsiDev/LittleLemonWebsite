@@ -11,7 +11,7 @@
 .NavBarContainer ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1.6rem;
 }
 .NavBarContainer a{
@@ -22,4 +22,75 @@
 .NavBarContainer a:hover{
     transition: 150ms;
     color: #EE9972;
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+.links-container{
+    display: none;
+}
+
+@media (max-width: 1024px){ 
+    .NavBarContainer{
+        margin: 1.5rem 0.8rem;
+    }
+    .NavBarContainer img{
+        margin: 0 1rem;
+    }
+    .NavBarContainer ul{
+        gap: 1rem;
+    }
+}
+@media (max-width: 820px){ 
+    .NavBarContainer{
+        justify-content: center;
+    }
+}
+@media (max-width: 700px){
+    .NavBarContainer{
+        justify-content: space-between;
+    }
+    .desktop-links{
+        display: none;
+    }
+    .links-container{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 300px;
+        height: 100%;
+        background: hsla(0, 0%, 100%, 100);
+        box-shadow: 0 0 10px black;
+    }
+    .links-container ul{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 1rem;
+    }
+    .NavBarContainer a{
+        box-sizing: border-box;
+        height: auto;
+        font-size: 1.5rem;
+        width: 100%;
+        margin: 0 1.2rem;
+    }
+    .open-sidebar-button, .close-sidebar-button{
+        display: block;
+        margin: 1rem;
+    }
+    #sidebar-active:checked ~ .links-container{
+        display: flex;
+    }
+}
+@media (max-width: 418px){
+    .NavBarContainer img{
+        margin: 0;
+    }
 }
